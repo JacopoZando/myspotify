@@ -1,0 +1,650 @@
+* {
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+/* HOVER E LINK */
+.whitechange:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.whitechange-u:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.textgrey {
+  color: #61646a;
+  text-decoration: none;
+}
+
+/* MACROSTRUTTURA */
+
+main {
+  display: flex;
+  width: 100%;
+  background-color: black;
+}
+
+.my-left-sidebar,
+.my-container-result {
+  height: calc(100vh - 100px);
+}
+
+
+
+
+
+/* DEFINIZIONE DELLA ZONA SINISTRA DI NAVIGAZIONE */
+
+.my-left-sidebar {
+  flex-basis: 20%;
+  height: calc(100vh - 100px);
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.my-left-sidebar-container {
+  width: 100%;
+  margin: 0 15px 15px 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* LOGO SPOTIFY */
+.my-left-sidebar-logo {
+  height: 75px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-spotify>img {
+  height: 50px;
+}
+
+.logosmall {
+  display: none;
+}
+
+.logo-spotify-small>img {
+  height: 30px;
+}
+
+/* FINE LOGO */
+
+.my-homesearchlibrary {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.hsl {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.hsl>img {
+  width: 30px;
+}
+
+.album-title {
+  font-size: 15px;
+  color: white;
+
+}
+/* FLEXGROW FLEXGROW FLEXGROW FLEXGROW FLEXGROW FLEXGROW  */
+.my-playlist {
+  margin: 30px 0 10px 0;
+  flex-grow: 2;
+  overflow: auto;
+}
+
+.my-playlist-creation {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.createplaylist {
+  font-size: 17px;
+}
+
+.my-playlist ul {
+  margin-top: 15px;
+}
+
+.my-playlist ul li{
+  margin: 15px 0;
+  list-style-type: none;
+}
+#my-more {
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  padding: 0px 15px 6px 15px;
+  background: grey;
+  margin-right: 5px;
+
+}
+
+.my-userprofile {
+  width: 100%;
+}
+
+.my-installation {
+  margin-bottom: 15px;
+}
+
+.my-userprofile {
+  margin-top: 15px;
+}
+
+.my-userprofile>img {
+  width: 25px;
+  border-radius: 100%;
+  background-color: grey;
+}
+
+.my-greyline {
+  border-top: 1px solid grey;
+  width: 100%;
+}
+
+#profile-title {
+  color: white;
+  margin-left: 15px;
+}
+
+/* MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN  */
+/* NAVIGATORE PER L'UPGRADE */
+
+.my-upgrade {
+  height: 15%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: #080b12;
+}
+
+.my-upgrade-container {
+  width: 100%;
+  height: 100%;
+  margin: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+}
+
+#upgrade {
+  border: 3px solid white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  text-decoration: none;
+  color: white;
+  transition: all .2s ease-in-out;
+}
+
+#upgrade:hover {
+  text-decoration: none;
+  color:white;
+  transform: scale(1.1);
+}
+
+/* ZONA DEI RISULTATI */
+
+.my-container-result {
+  width: 20%;
+  flex-grow: 1;
+}
+
+.my-result {
+  width: 100%;
+  height: calc(100vh - 15% - 100px);
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+  background-color: #141922;
+}
+
+.my-result-container {
+  width: 100%;
+  margin: 0 15px 15px 15px;
+}
+
+.my-result-nav {
+  display: flex;
+  justify-content: center;
+  padding: 5px 0;
+  flex-wrap: wrap;
+
+}
+.menuchoice {
+  display: flex;
+  flex-direction: column;
+  width: 130px;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+
+}
+.greenlight {
+  height: 2px;
+  width: 50px;
+  background-color: #adff2f;
+  margin-top: 5px;
+}
+
+.blackline {
+  background-color: #141922;
+}
+
+.my-result-nav ul {
+  text-align: center;
+}
+
+.my-result-nav ul li{
+  display: inline;
+  list-style-type: none;
+  margin: 0 10px;
+
+}
+
+.h3-album-title {
+  color: white;
+}
+
+.my-result-albumlist {
+  width: 100%;
+  display: flex;
+
+}
+
+.albumlist-imagedescription img {
+    width: 100%;
+}
+
+.albumlist-imagedescription {
+  text-align: center;
+  flex-basis: calc((100% / 6) - 2%);
+  margin-right: 2%;
+}
+
+.my-result-albumlist div:first-child {
+    margin-left: 0;
+}
+
+.albumlist-imagedescription img:hover {
+  filter: opacity(50%);
+}
+
+.my-album-subtitle {
+  font-size: 10px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.h3-album-subtitle {
+  font-size: 10px;
+  color: #61646a;;
+}
+
+.album-subtitle {
+  display: block;
+  color: #61646a;
+}
+
+.circleportrait {
+  border-radius: 50%;
+}
+
+/* TASTO PLAY SULLE COPERTINE */
+
+.albumimage {
+  position: relative;
+}
+
+.my-play-album {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 3;
+  font-size: 50px;
+  color: transparent;
+  transform: translate(-50%, -50%);
+  display: none;
+
+}
+
+.albumlist-imagedescription:hover .my-play-album {
+  display: block;
+}
+
+.my-play-album a {
+  text-decoration: none;
+  color: white;
+}
+
+
+/* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER  */
+
+.my-footer {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #282828;
+  z-index: 999;
+}
+
+.my-footer-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* CARATTERISTICHE DELLE TRE ZONE DEL FOOTER */
+.my-player-contentleft,
+.my-player-contentright {
+  flex-basis: 20%;
+  height: 100%;
+  display: flex;
+}
+
+.my-player-contentmiddle {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* CONTENUTI DELLA ZONA IN BASSO A SX DEL FOOTER */
+
+.my-minialbum-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 15px;
+}
+
+.minicover-image img {
+  max-width: 65px;
+  margin-right: 15px;
+}
+
+.my-minialbum-coverdescription {
+  display: flex;
+  align-items: center;
+}
+
+#mini-title {
+  color: white;
+  font-size: 12px;
+  display: block;
+}
+
+.mini-subtitle {
+  color: grey;
+  font-size: 10px;
+}
+
+.my-minialbum-likefolder {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.my-minialbum-likefolder>ul {
+  margin-bottom: 0;
+}
+
+.my-minialbum-likefolder ul li {
+  list-style-type: none;
+  display: inline;
+  color: grey;
+  font-size: 25px;
+
+}
+
+.my-minialbum-likefolder ul li:last-child {
+  margin-left: 10px;
+}
+
+/* PARTE CENTRALE DEL FOOTER */
+/* PARTE CENTRALE SUPERIORE, PLAYER BUTTONS */
+
+
+
+.my-player-buttons-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.my-player-buttons {
+  min-width: 170px;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.my-player-buttons ul li {
+  list-style-type: none;
+  display: inline;
+  color: white;
+  font-size: 25px;
+}
+
+.my-player-buttons ul li:nth-child(1n+2) {
+  margin-left: 5px;
+}
+
+/* LINEA DEL TEMPO */
+.my-time-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.my-timelaps {
+  position: relative;
+  background-color: #5a5a5a;
+  flex-basis: 50%;
+  height: 6px;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.my-timelaps-active {
+  position: absolute;
+  width: 20%;
+  height: 6px;
+  background-color: #c1c1c1;
+}
+
+.my-timelaps-active:hover {
+  border: 3px solid Chartreuse;
+}
+
+#minutesecond {
+  font-size: 15px;
+  color: white;
+}
+
+.my-pointer {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  position: absolute;
+  left: 17%;
+  top: -4px;
+  background-color: transparent;
+}
+
+.my-pointer:hover {
+    background-color: white;
+}
+
+.my-timelaps:hover .my-pointer {
+  background-color: white;
+}
+
+/* PARTE DESTRA DEL FOOTER */
+
+.my-player-contentright {
+  justify-content: flex-end;
+}
+
+.my-media-container {
+  width: 200px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.my-mediaselection {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+.my-mediaselection>ul {
+  margin-bottom: 0;
+}
+
+.my-mediaselection ul li {
+  list-style-type: none;
+  display: inline;
+  color: white;
+  font-size: 15px;
+}
+
+.my-mediaselection ul li:nth-child(1n+2) {
+  margin-left: 10px;
+}
+
+.my-volumecontroller {
+  position: relative;
+  background-color: #5a5a5a;
+  min-width: 50%;
+  height: 5px;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+
+.my-volumecontroller-active {
+  position: absolute;
+  width: 25%;
+  height: 5px;
+  background-color: #c1c1c1;
+}
+
+.my-volumecontroller-active:hover{
+  border: 3px solid Chartreuse;
+}
+
+.my-volumepointer {
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  position: absolute;
+  left: 20%;
+  top: -5px;
+  background-color: transparent;
+}
+
+.my-volumecontroller:hover .my-volumepointer {
+  background-color: white;
+}
+
+
+/* XS XS XS XS XS XS XS XS XS XS XS XS XS XS XS XS XS XS XS  */
+@media all and (max-width: 768px) {
+  /* RIMOZIONE ELEMENTO */
+  .desaparecido {
+    display: none;
+  }
+  /* PASSAGGIO A LOGO PICCOLO */
+  .logosmall {
+    display: flex;
+  }
+
+  .my-homesearchlibrary {
+    margin-top: 0px;
+  }
+
+/* RIDIMENSIONAMENTO DELL'ALBUM LIST */
+  .my-result-albumlist {
+    flex-wrap: wrap;
+  }
+
+  .albumlist-imagedescription {
+    text-align: center;
+    flex-basis: calc((100% / 2) - 2%);
+    margin-right: 2%;
+  }
+
+  /* OTTIMIZZAZIONE ICONE IN BASSO A SX */
+  .my-minialbum-likefolder ul li:last-child {
+    margin-left: 0px;
+  }
+}
+/* S S S S S S S S S S S S S S S S S S S S S S S S S S S S  */
+@media all and (min-width: 769px) and (max-width: 969px) {
+
+/* RIDIMENSIONAMENTO DELL'ALBUM LIST */
+
+  .my-result-albumlist {
+    flex-wrap: wrap;
+  }
+
+  .albumlist-imagedescription {
+    text-align: center;
+    flex-basis: calc((100% / 2) - 2%);
+    margin-right: 2%;
+  }
+
+  /* OTTIMIZZAZIONE ICONE IN BASSO A SX */
+  .my-minialbum-likefolder ul li:last-child {
+    margin-left: 0px;
+  }
+
+}
+/* MD MD MD MD MD MD MD MD MD MD MD MD MD MD MD MD MD MD MD  */
+@media all and (min-width: 970px) and (max-width: 1169px) {
+
+/* RIDIMENSIONAMENTO DELL'ALBUM LIST */
+  .my-result-albumlist {
+    flex-wrap: wrap;
+  }
+
+  .albumlist-imagedescription {
+    text-align: center;
+    flex-basis: calc((100% / 4) - 2%);
+    margin-right: 2%;
+  }
+
+  /* OTTIMIZZAZIONE ICONE IN BASSO A SX */
+  .my-minialbum-likefolder ul li:last-child {
+    margin-left: 0px;
+  }
+
+}
+/* LG LG LG LG LG LG LG LG LG LG LG LG LG LG LG LG LG LG LG  */
+@media all and (min-width: 1170px) {
+
+}
